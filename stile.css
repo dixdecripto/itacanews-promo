@@ -7,18 +7,9 @@
   --tit:"Playfair Display",Georgia,"Times New Roman",serif;
   --body:"DM Sans","Helvetica Neue",Arial,sans-serif;
   --r:10px;
-  color-scheme:light;
+  color-scheme:light only;
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --paper:#111821; --paper2:#182130; --ink:#E9EEF5; --soft:#A2B0C2; --line:#2A3647;
-    --navy:#8FB1EC; --navy-deep:#0F1A2E; --cyan:#5CE1E6; --ok:#6CC594; --warn:#E3B55B; --mark-fg:#0B1420; color-scheme:dark;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#111821; --paper2:#182130; --ink:#E9EEF5; --soft:#A2B0C2; --line:#2A3647;
-  --navy:#8FB1EC; --navy-deep:#0F1A2E; --cyan:#5CE1E6; --ok:#6CC594; --warn:#E3B55B; --mark-fg:#0B1420; color-scheme:dark;
-}
+/* Carta sempre bianca, in ogni tema del visualizzatore: scelta di Dix del 10/10. */
 *{box-sizing:border-box}
 html,body{margin:0}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
